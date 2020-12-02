@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Wine.delete_all
+User.delete_all
+
+u1 = User.create(name: "Jessica")
+u2 = User.create(name: "Amanda")
+u3 = User.create(name: "Nicholas")
+
+wine1 = Wine.create(name: "AXR - Cabernet Sauvignon", year: 2017, kind: "blend", cost: "$80", region: "napa")
+wine2 = Wine.create(name: "Duckhorn - The Discussion", year: 2016, kind: "blend", cost: "$155", region: "napa")
+
+c1 = Comment.create(comment: "This wine is excellent!", user: u1, wine: wine1)
