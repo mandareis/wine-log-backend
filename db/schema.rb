@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_01_174959) do
+ActiveRecord::Schema.define(version: 2020_12_07_001759) do
 
   create_table "comments", force: :cascade do |t|
     t.string "comment"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_12_01_174959) do
     t.integer "wine_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id", "wine_id"], name: "index_loves_on_user_id_and_wine_id", unique: true
     t.index ["user_id"], name: "index_loves_on_user_id"
     t.index ["wine_id"], name: "index_loves_on_wine_id"
   end
@@ -45,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_12_01_174959) do
     t.string "region"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "img_url"
   end
 
   add_foreign_key "comments", "users"

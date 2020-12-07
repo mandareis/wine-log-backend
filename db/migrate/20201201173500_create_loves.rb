@@ -6,5 +6,6 @@ class CreateLoves < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+    add_index :loves, [:user_id, :wine_id], unique: true
   end
 end
