@@ -18,9 +18,9 @@ wine1 = Wine.create(name: "AXR - Cabernet Sauvignon", img_url: "https://www.axrn
 
 wine2 = Wine.create(name: "Duckhorn - The Discussion", img_url: "https://www.duckhornwineshop.com/assets/images/products/pictures/2016-duckhorn-vineyards-napa-valley-the-discussion-red-wine-TGBBQZ.jpg", year: 2016, kind: "Blend", cost: "$155", region: "Napa Valley")
 
-wine3 = Wine.create(name: "Palmaz Vineyards - Gaston", img_url: "https://d2c15us614ym2e.cloudfront.net/images/products/2020/06/2016_Palmaz_Vineyards_Gaston_Cabernet_Sauvignon_Napa_Valleybottle_compressed.jpg", year: 2017, kind: "Cabernet Sauvignon", cost: "$220", region: "Napa Valley")
+wine3 = Wine.create(name: "Palmaz Vineyards - Gaston", img_url: "https://palmazvineyards.com/Content/Uploads/wine/vintage-header-105-2017.png", year: 2017, kind: "Cabernet Sauvignon", cost: "$220", region: "Napa Valley")
 
-wine4 = Wine.create(name: "Paraduxx - Red Wine Cork Tree Vineyard", img_url: "https://www.duckhornwineshop.com/assets/images/products/pictures/2016-paraduxx-red-wine-nv-cork-tree-vineyard.jpg", year: 2016, kind: "Blend", cost: "$82.00", region: "Napa Valley")
+wine4 = Wine.create(name: "Paraduxx Red Wine Cork Tree Vineyard", img_url: "https://www.duckhornwineshop.com/assets/images/products/pictures/2016-paraduxx-red-wine-nv-cork-tree-vineyard.jpg", year: 2016, kind: "Blend", cost: "$82.00", region: "Napa Valley")
 
 wine5 = Wine.create(name: "AXR - Ganzin Chardonnay", img_url: "https://www.axrnapavalley.com/assets/images/products/pictures/axr.ganzinChard-OXDSPQ.png", year: 2018, kind: "Cabernet Sauvignon", cost: "$72.00", region: "Napa Valley")
 
