@@ -17,6 +17,12 @@ class CommentsController < ApplicationController
 
   def destroy
     comment = Comment.find(params[:id])
+    if params[:user_id] != comment.user_id.to_s
+      render json: {
+        "error" => "cannot delete other user's comment",
+      }, status: 403
+      return
+    end
     comment.destroy
     render json: comment
   end
